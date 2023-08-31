@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTSvgPlusGsapAnimation</title>
+
+    <link rel="stylesheet" href="TESTSvgPlusGsapAnimation.css">
+
+</head>
+
+<body>
+<!-- Schaufel SVG, generiert über Illustrator (zu exportierende Objekte markieren, Rechtsklick, Für Export sammeln)-->
+<div class="Schaufel">
+   blablasblasbdkasjdlkjasldk
+
+<svg viewBox="0 0 447.97 413.49">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: #ec624c;
+                }
+            </style>
+        </defs>
+        <g id="Ebene_2" data-name="Ebene 2">
+            <g id="Ebene_2-2" data-name="Ebene 2">
+                <g id="Schaufel">
+                    <polygon class="cls-1"
+                        points="303.95 290.74 427.94 413.49 433.62 410.68 446.1 410.05 447.97 405.53 322.68 286.16 269.42 242.47 264.84 252.88 303.95 290.74" />
+                    <polygon class="cls-1"
+                        points="199.51 205.44 108.81 147.19 79.58 131.07 67.72 114.84 55.24 112.03 21.84 61.79 4.06 26.21 0 0.62 8.43 0 35.89 18.1 62.1 47.75 110.47 111.72 94.56 114.53 112.66 131.07 196.6 184.74 222.19 202.53 205.55 210.44 199.51 205.44" />
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>    
+
+
+</body>
+
+<footer>
+
+<!-- gsap-Einbindung-->
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <script src="../js/script.js"></script>
+
+<!-- Skripte für gsap-animations-->
+    <script>
+        var tl = gsap.timeline({defaults:{duration: .7, ease: Back.easeOut.config(2), opacity: 0}})
+
+        tl.from("#Schaufel", {delay: 1, scale: .2, transformOrigin: 'center'}, "-=.2")
+    </script>
+</footer>
+
+</html>

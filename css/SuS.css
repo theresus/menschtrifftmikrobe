@@ -1,0 +1,162 @@
+* {
+  font-size: 10px;
+  font-family: "Space Grotesk";
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+#mybody {
+  background-color: white;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/*Einleitung*/
+
+.ganzerbildschirm {
+  position: relative;
+  height: 100vh;
+
+}
+
+.titelpositionierung {
+  position: relative;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headline {
+  font-size: 20rem;
+  color: white;
+  text-align: center;
+  line-height: 18rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.titeluntertitel {
+  font-family: "Space Grotesk";
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+.einleitungselement {
+  position: relative;
+  margin-top: 1300px;
+  margin-bottom: 5300px;
+}
+
+.einleitungstext {
+  font-family: "Space Grotesk";
+  font-size: 2.5rem;
+  color: black;
+  text-align: left;
+  line-height: 120%;
+  width: 30vw;
+  margin-left: 67vw;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+}
+
+/*alle einzelnen szenen*/
+
+
+
+
+
+
+
+.fliesstext {
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
+  font-size: 2.3rem;
+  position: relative;
+  width: 30vw;
+  left: 67vw;
+  kerning: 0.8rem;
+  /* feste Höhe bedingt overflow: scroll wenn Text lönger als feste Höhe ist */
+  /* height: 40vh; */
+  overflow: scroll;
+}
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.fliesstext::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.fliesstext {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.isActive {
+  position: fixed;
+}
+
+#lottieplayer {
+ position: fixed;
+  height: 100%;
+  margin: auto;
+}
+
+.platzhalter {
+  height: 100px;
+}
+
+.container {
+  position: relative !important;
+  height: 100000px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e8e5d9; 
+  opacity: 0;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00586d; 
+}
+
+
+
+
+
+
+/*@media (max-width: 500px) {
+  .szene{
+    
+  }
+}
